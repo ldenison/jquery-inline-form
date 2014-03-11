@@ -47,9 +47,8 @@
 	form.append(cancel);
     	
     	//Add the form after the editable element
-    	$(this).after(form);
+    	$(button).after(form);
     	$(form).hide();
-    	var cancel = $(form).find(".cancel");
     	
     	//Hide the form when the cancel button is clicked and reset the value of the input
     	$(cancel).click(function () {
@@ -60,7 +59,7 @@
     	
     	//Display the form when the element is clicked
     	$(button).click(function() {
-    		$(this).hide();
+    		$(button).hide();
     		$(form).show();
     	});
     	//Return the button for JQuery chaining
